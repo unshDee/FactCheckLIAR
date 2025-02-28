@@ -282,7 +282,8 @@ def fact_check(query, bm25, faiss_index, dense_model, df, classifier, tokenizer,
         # Concise response using a template
         response = (
             f"If you are referring to a claim by {speaker} that "
-            f"{retrieved_claim['statement']}, it is {label_descriptions[predicted_label]}."
+            f"{retrieved_claim['statement']}\n"
+            f"It is {label_descriptions[predicted_label]}."
         )
     else:
         # Verbose response with additional supporting details
