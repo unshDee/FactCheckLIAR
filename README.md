@@ -1,5 +1,7 @@
 # Fact-Checking System Using the LIAR Dataset
 
+Deployed on Streamlit: [Click HERE](https://unshdee-factcheckliar-app-2y5wr1.streamlit.app/)
+
 ## Model Overview
 
 This model is a fact‐checking system built on the LIAR dataset. It combines both sparse (BM25) and dense (FAISS) retrieval techniques to locate relevant claims and uses a fine-tuned BERT-based classifier to predict the veracity of user-provided statements. The final output is generated via a template that provides a clear, concise verdict along with supporting details such as the original claim, speaker, and context.
